@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  background-color: #fff;
+  color: #71776f;
+  font-family: 'Lato', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Raleway', sans-serif;
+}
+#topbar {
+  background-color: #303030;
+  height: 100px;
+  display: none;
+}
+#topbar a {
+  color: #a9a9a9;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  float: right;
+  margin: 35px 0 0 30px;
+  -webkit-transition: all 400ms ease;
+  -moz-transition: all 400ms ease;
+  -ms-transition: all 400ms ease;
+  transition: all 400ms ease;
+  padding-bottom: 10px;
+  border-bottom: 5px solid #303030;
+}
+#topbar a:hover {
+  color: #f36d24;
+  -webkit-transform: translateY(-4px);
+  -moz-transform: translateY(-4px);
+  -ms-transform: translateY(-4px);
+  transform: translateY(-4px);
+  border-bottom: 5px solid #f36d24;
+}
+#topbar img {
+  height: 80px;
+  margin-top: 10px;
+}
+#introduction {
+  text-align: center;
+  margin: 200px 0 100px 0;
+}
+#introduction img {
+  width: 40%;
+  margin-bottom: 40px;
+}
+#introduction h1 {
+  color: #f36d24;
+  font-size: 2rem;
+  font-weight: light;
+  opacity: 0;
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  -ms-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+#introduction h5 {
+  text-transform: uppercase;
+  font-size: 5rem;
+  font-weight: 900;
+  margin-bottom: 40px;
+  color: #303030;
+}
+#introduction h5 span {
+  color: #f36d24;
+}
+#about img {
+  width: 50%;
+  border-radius: 200px;
+  margin-bottom: 20px;
+}
+#about div {
+  text-align: center;
+}
+#about a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #f36d24;
+  margin-bottom: 50px;
+}
+/* #Media Queries
+================================================== */
+/* Smaller than standard 960 (devices and browsers) */
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  #introduction h5 {
+    font-size: 4rem;
+  }
+}
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+  #introduction h5 {
+    font-size: 3rem;
+  }
+}
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  #introduction h5 {
+    font-size: 2rem;
+  }
+}
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+  #introduction h5 {
+    font-size: 2rem;
+  }
+}
