@@ -8,6 +8,7 @@ lighterGrey = #A9A9A9
 lightGrey = #71776f
 darkColor = #303030
 flameColor = #f36d24
+flameShadow = #b95f2d
 
 //easings
 easeInQuint = cubic-bezier(0.755, 0.050, 0.855, 0.060)
@@ -23,12 +24,61 @@ body
 	font-family 'Lato', sans-serif
 h1,h2,h3,h4,h5
 	font-family 'Raleway', sans-serif
+#mainContainer
+	overflow hidden
+	position absolute
+	width 100%
+	height 100%
+	top 0
+#home
+	transition easeInOutQuint 0.8s all
+	position absolute
+	width 100%
+	height 100%
+	padding-top 150px
+	top 0
+	overflow scroll
 
+///////////////////////////
+
+#about
+	width 100%
+	height 100%
+	top 0
+	position absolute
+	z-index 200
+	transition easeInOutQuint 0.8s all
+	transform translateX(100%)
+	overflow scroll
+	#aboutcontent
+		width 100%
+		height 100%
+		background-color white
+		top 0
+		transition easeInOutQuint 0.8s all
+		padding 150px 0 100px 0
+	h1
+		text-transform uppercase
+		font-weight 900
+		color darkColor
+		font-size 2rem
+	p
+		font-size 1.2rem
+	img
+		width 100%
+	a
+		text-decoration none
+	.contactline
+		margin-bottom 3px
+
+///////////////////////////
 
 #topbar
 	background-color darkColor
 	height 100px
-	display none
+	transition easeInOutQuint 0.8s all
+	position relative
+	z-index 1000
 	a
 		color lighterGrey
 		text-decoration none
@@ -36,7 +86,7 @@ h1,h2,h3,h4,h5
 		text-transform uppercase
 		letter-spacing 1px
 		float right
-		margin 35px 0 0 30px
+		margin 47px 0 0 30px
 		transition all 400ms ease
 		padding-bottom 10px
 		border-bottom 5px solid darkColor
@@ -44,50 +94,180 @@ h1,h2,h3,h4,h5
 		color flameColor
 		transform translateY(-4px)
 		border-bottom 5px solid flameColor
+		cursor pointer
 	img
-		height 80px
-		margin-top 10px
+		height 60px
+		margin-top 24px
+	.logobox
+		position relative
 
+#topbardivider
+		transition easeInOutQuint 0.7s all
+		position relative
+		z-index 1000
+
+///////////////////////////
 
 #introduction
 	text-align center
-	margin 200px 0 100px 0
+	background-color white
+	padding 100px 0 0 0
+	margin-top -30px
 	img
-		width 40%
+		width 30%
 		margin-bottom 40px
 	h1
 		color flameColor
 		font-size 2rem
 		font-weight light
-		opacity 0
 		transition all 0.6s ease
+		span
+			font-size 1rem
+			opacity 0.5
 	h5
 		text-transform uppercase
-		font-size 5rem
+		font-size 4rem
 		font-weight 900
 		margin-bottom 40px
 		color darkColor
-		span
-			color flameColor
+	.short
+		width 100px
+		border-color flameColor
+		margin 10px auto 10px auto
+	.introPic
+		padding-bottom 80px
+	.fullWidth
+		width 100%
+		padding 50px 0 50px 0
+		background-color darkColor
+		color lighterGrey
+		h1
+			text-transform uppercase
+			font-weight 900
+		p
+			font-size 1.2rem
+		p.extramargin
+			margin-top 50px
+	.wipArrow
+		width 120px
+		height 200px
+		background-image  url(../images/arrow-down.svg)
+		background-size 100% 100%
+		position absolute
+		z-index 101
+		left 50%
+		margin-top -15px
+		margin-left -60px
+	.fireball
+		background-color flameColor
+		color white
+		width 220px
+		height 220px
+		border-radius 300px
+		margin 0 auto 0 auto
+		border 10px solid white
+		.car
+			position absolute
+			width 164px
+			height 126px
+			transform translateX(-91px) translateY(80px)
+		.flag
+			position absolute
+			width 94px
+			height 76px
+			transform translateX(9px) translateY(8px)
+///////////////////////////
 
-#about
+#games
+	text-align left
+	margin-top -30px
+	padding 130px 0 130px 0
+	color darkColor
+	background-image url('../images/racewarsbanner.png')
+	background-size cover
+	background-position center
+	.container
+		padding 20px
+		background-color rgba(255,255,255,1)
+		background-image  url(../images/chickenbg.png)
+		background-repeat no-repeat
+		background-position 0% 120%
+	h1
+		font-size 1.5rem
+		font-weight 900
+		text-transform uppercase
+	p
+		font-size 1.1rem
+		color lightGrey
 	img
-		width 50%
-		border-radius 200px
-		margin-bottom 20px
-	div
-		text-align center
+		width 100%
 	a
-		font-size 2rem
+		padding 10px
+		background-color flameColor
+		color white
 		text-decoration none
+		margin-right 5px
+		border-radius 2px
+		font-size 1.1rem
+		font-weight 900
+		box-shadow: 0px 3px 0px 0px flameShadow
+		position relative
+		top -10px
+
+///////////////////////////
+
+#footer
+	text-align left
+	background-color black
+	padding 100px 0 200px 0
+	margin-top -30px
+	position relative
+	font-size 1.1rem
+	h1
 		color flameColor
-		margin-bottom 50px
+		text-transform uppercase
+		font-size 1.4rem
+		font-weight 900
+	.flamesDividerUp
+		position absolute
+		top 0
+		margin-top -30px
+		background-image url('../images/xflamesDark.png')
+	a
+		color flameColor
+		text-decoration none
 
 
+span
+	color flameColor
 
+.flamesDividerUp
+	width 100%
+	height 30px
+	display block
+	background-image url('../images/xflamesflip.png')
+	background-size 50% 110%
+	position relative
+	z-index 100
+.flamesDividerDown
+	width 100%
+	height 30px
+	display block
+	background-image url('../images/xflames.png')
+	background-size 50% 110%
+	position relative
+	z-index 1000
+.centertext
+	text-align center
 
 /* #Media Queries
 ================================================== */
+
+@-moz-document url-prefix() {
+  #topbar {
+     background-color: #2C2C2C;
+  }
+}
 
 	/* Smaller than standard 960 (devices and browsers) */
 	@media only screen and (max-width: 959px) {}
@@ -117,6 +297,29 @@ h1,h2,h3,h4,h5
 				font-size: 2rem;
 			}
 		}
+		#topbar{
+			height: 150px;
+		}
+		#topbar .logobox{
+			text-align:center;
+		}
+		#topbar .menubox{
+			text-align:center;
+		}
+		#topbar .menubox a{
+			float: right;
+			margin: 20px 55px 0 10px;
+		}
+		#games .container{
+			padding: 20px 20px 50px 20px;
+		}
+		#games a{
+			top:20px
+		}
+		#about #aboutcontent{
+			padding 200px 0 100px 0
+		}
+
 	}
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
@@ -125,5 +328,29 @@ h1,h2,h3,h4,h5
 			h5{
 				font-size: 2rem;
 			}
+
 		}
+		#topbar{
+			height: 150px;
+		}
+		#topbar .logobox{
+			text-align:center;
+		}
+		#topbar .menubox{
+			text-align:center;
+		}
+		#topbar .menubox a{
+			float: right;
+			margin: 10px 20px 0 10px;
+		}
+		#games .container{
+			padding: 20px 20px 50px 20px;
+		}
+		#games a{
+			top:20px
+		}
+		#about #aboutcontent{
+			padding 200px 0 100px 0
+		}
+
 	}

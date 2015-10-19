@@ -22,6 +22,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Raleway:400,900,700,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="stylesheets/base.css">
 	<link rel="stylesheet" href="stylesheets/skeleton.css">
+	<link rel="stylesheet" href="stylesheets/icomoon.css">
 	<link rel="stylesheet" href="stylesheets/layout.css">
 	<link rel="stylesheet" href="stylesheets/style.css">
 
@@ -31,8 +32,13 @@
 
 	<!-- Favicons
 	================================================== -->
+	<link rel="shortcut icon" href="images/icon.png">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 
 	<script src="js/jquery-2.1.0.min.js"></script>
+	<script src="js/jquery.jrumble.1.3.min.js"></script>
 	<script src="js/turtle.js"></script>
 
 
@@ -44,37 +50,143 @@
 <!-- ================================================== -->
 <div id="topbar">
 	<div class="container">
-		<div class="eight columns">
-			<img src="images/turtleblaze-dark.png">
+		<div class="eight columns logobox">
+			<p><img alt="logo" src="images/turtleblaze-dark.png">turtleblaze</p>
 		</div>
-		<div class="eight columns">
-			<a href="">about</a>
-			<a href="">games</a>
-			<a href="">home</a>
-		</div>
-	</div>
-</div>
-
-
-<div id="introduction">
-	<div class="container">
-		<div class="sixteen columns">
-			<img class="big-logo" src="images/turtleblaze-wit.png">
-			<h5>Turtle<span>Blaze</span></h5>
-			<h1 id="tagline"></h1>
+		<div class="eight columns menubox">
+			<a class="aboutbutton">about</a>
+			<a class="blogbutton">blog</a>
+			<a class="homebutton">home</a>
 		</div>
 	</div>
 </div>
+<div id="topbardivider" class="flamesDividerDown"></div>
 
-<div id="about">
-	<div  class="container">
-		<div class="eight columns">
-		<a href="https://twitter.com/rilemtwit"><img src="images/richardpica.png"></br>
-		@rilemtwit</a>
+<div id="mainContainer">
+	<div id="home">
+		<div id="introduction">
+			<div class="container introPic">
+				<div class="sixteen columns">
+					<img alt="logo" class="big-logo" src="images/turtleblaze-wit.png">
+					<h5>Turtle<span>Blaze</span></h5>
+					<h1 id="tagline"><span class="icon-dice"> </span></h1>
+				</div>
+			</div>
+			<div class="flamesDividerUp"></div>
+			<div class="fullWidth">
+				<div class="container">
+					<div class="eight columns">
+						<div class="fireball">
+							<img alt="car" class="car" src="images/car.png">
+							<img alt="flag" class="flag" src="images/flag.gif">
+						</div>
+					</div>
+					<div class="eight columns">
+						<hr class="short"/>
+							<h1>Turtlewha?</h1>
+						<hr class="short"/>
+						<p class="extramargin">Hi we're <span>TurtleBlaze</span>, 2 geeks that use their collective nerd powers to create <span>epic</span> games.</p>
+						<p>At the moment we're working on <br/><span>Intergalactic Race Wars.</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="flamesDividerDown"></div>
 		</div>
-		<div class="eight columns">
-		<a href="https://twitter.com/M0rph3v5"><img src="images/bonjomon.png"></br>
-		@m0rph3v5</a>
+
+
+
+		<div id="games">
+			<div class="container">
+				<div class="eight columns">
+					<h1>Intergalactic <span>Race Wars</span></h1>
+					<hr/>
+					<p> join a huge intergalactic racing tournament that takes place on several different planets. The races are violent and explosive as the only rule is to reach the finish line!</p>
+				</div>
+				<div class="eight columns">
+					<img alt="moving prototype gif" src="images/racewarsproto.gif">
+				</div>
+				<div class="sixteen columns">
+					<a href="http://turtleblazedev.tumblr.com/">Devlog</a>
+					<!-- <a href="">More information</a> -->
+				</div>
+			</div>
+		</div>
+
+		<div id="footer">
+			<div class="flamesDividerUp"></div>
+			<div class="container">
+				<div class=" one-third column">
+					<h1>Contact</h1>
+					<p>While We do spend most of our time creating crazy games, we also have some time to listen. If there's anything you'd like to tell us, don't be afraid to mail us:<br><br>
+					<span class="icon-envelop"> </span><a href="mailto:richard@turtleblaze.com">richard@turtleblaze.com</a><br><span class="icon-envelop"> </span><a href="mailto:benjamin@turtleblaze.com">benjamin@turtleblaze.com</a>
+					</p>
+				</div>
+				<div class=" one-third column">
+					<h1>heroes in a half-shell</h1>
+					<p>Look! we're also on:</p>
+					<p>
+					<span class="icon-tumblr"> </span><a href="http://turtleblazedev.tumblr.com/">tumblr</a><br>
+					<span class="icon-youtube"> </span><a href="http://youtube.com/turtleblaze/">youtube</a><br>
+
+					</p>
+				</div>
+				<div class=" one-third column">
+					<h1>idunno</h1>
+					<img alt="silly face turtle" src="images/lolturtle.png">
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="about">
+		<div id="aboutcontent">
+			<div class="container">
+
+				<div class="sixteen columns">
+					<h1>about <span>us</span></h1>
+				</div>
+
+				<hr/>
+
+				<div class="eleven columns">
+					<p>Heya! We're TurtleBlaze, and we make games.</p>
+					<p>We're 2 dutch geeks that use their collective nerd powers to create epic games. We've both been active in the gamejamming scene for quite a while now. Which is great fun, but we feel the time for experimenting is over.</p>
+					<p>Time to wake up.</p>
+				</div>
+				<div class="five columns">
+					<img alt="logo" src="images/turtleblaze-wit.png">
+				</div>
+
+				<hr/>
+
+				<div class="eight columns">
+					<h1>Richard <span>Lems</span></h1>
+					<p><img alt="photo of richard" src="images/richardphoto.jpg"></p>
+					<hr/>
+					<p class="contactline"><a href="mailto:richard@turtleblaze.com"><span class="icon-envelop"> </span><span>richard@turtleblaze.com</span></a></p>
+					<p class="contactline"><a href="https://twitter.com/rilemtwit"><span class="icon-twitter"> </span><span>@rilemtwit</span></a></p>
+					<p><br>More often then not, biographies of people who make games start with a short story about their childhood.</p>
+						<p>Well my childhood was filled with Mario, Sonic, Gameboy, Anime, Comics, the list goes on.
+						These have all shaped me as a creative individual. As a child I fell in love with games, I had to find out how to make these magical experiences myself.</p>
+					<p>
+						It goes without saying that making games is a big part of my life now. It's something I've been doing for a long time, and I'll keep doing it as long as I can. :)
+					</p>
+				</div>
+
+
+				<div class="eight columns">
+					<h1>Benjamin <span>de Jager</span></h1>
+					<p><img alt="photo of benjamin" src="images/benjaminphoto.jpg"></p>
+					<hr/>
+					<p class="contactline"><a href="mailto:benjamin@turtleblaze.com"><span class="icon-envelop"> </span><span>benjamin@turtleblaze.com</span></a></p>
+					<p class="contactline"><a href="https://twitter.com/m0rph3v5"><span class="icon-twitter"> </span><span>@m0rph3v5</span></a></p>
+					<p><br>De Jager is an occupational surname of Dutch origin, meaning "the hunter".</p>
+				</div>
+
+				<div class="sixteen columns"><hr/></div>
+
+			</div>
 		</div>
 	</div>
 </div>

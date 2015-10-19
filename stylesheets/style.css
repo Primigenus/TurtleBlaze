@@ -11,10 +11,79 @@ h4,
 h5 {
   font-family: 'Raleway', sans-serif;
 }
+#mainContainer {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+#home {
+  -webkit-transition: cubic-bezier(0.86, 0, 0.07, 1) 0.8s all;
+  -moz-transition: cubic-bezier(0.86, 0, 0.07, 1) 0.8s all;
+  -ms-transition: cubic-bezier(0.86, 0, 0.07, 1) 0.8s all;
+  transition: cubic-bezier(0.86, 0, 0.07, 1) 0.8s all;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding-top: 150px;
+  top: 0;
+  overflow: scroll;
+}
+#about {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: absolute;
+  z-index: 200;
+  -webkit-transition: cubic-bezier(0.86, 0, 0.07, 1) 0.8s all;
+  -moz-transition: cubic-bezier(0.86, 0, 0.07, 1) 0.8s all;
+  -ms-transition: cubic-bezier(0.86, 0, 0.07, 1) 0.8s all;
+  transition: cubic-bezier(0.86, 0, 0.07, 1) 0.8s all;
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(100%);
+  overflow: scroll;
+}
+#about #aboutcontent {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  top: 0;
+  -webkit-transition: cubic-bezier(0.86, 0, 0.07, 1) 0.8s all;
+  -moz-transition: cubic-bezier(0.86, 0, 0.07, 1) 0.8s all;
+  -ms-transition: cubic-bezier(0.86, 0, 0.07, 1) 0.8s all;
+  transition: cubic-bezier(0.86, 0, 0.07, 1) 0.8s all;
+  padding: 150px 0 100px 0;
+}
+#about h1 {
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #303030;
+  font-size: 2rem;
+}
+#about p {
+  font-size: 1.2rem;
+}
+#about img {
+  width: 100%;
+}
+#about a {
+  text-decoration: none;
+}
+#about .contactline {
+  margin-bottom: 3px;
+}
 #topbar {
   background-color: #303030;
   height: 100px;
-  display: none;
+  -webkit-transition: cubic-bezier(0.86, 0, 0.07, 1) 0.8s all;
+  -moz-transition: cubic-bezier(0.86, 0, 0.07, 1) 0.8s all;
+  -ms-transition: cubic-bezier(0.86, 0, 0.07, 1) 0.8s all;
+  transition: cubic-bezier(0.86, 0, 0.07, 1) 0.8s all;
+  position: relative;
+  z-index: 1000;
 }
 #topbar a {
   color: #a9a9a9;
@@ -23,7 +92,7 @@ h5 {
   text-transform: uppercase;
   letter-spacing: 1px;
   float: right;
-  margin: 35px 0 0 30px;
+  margin: 47px 0 0 30px;
   -webkit-transition: all 400ms ease;
   -moz-transition: all 400ms ease;
   -ms-transition: all 400ms ease;
@@ -38,55 +107,211 @@ h5 {
   -ms-transform: translateY(-4px);
   transform: translateY(-4px);
   border-bottom: 5px solid #f36d24;
+  cursor: pointer;
 }
 #topbar img {
-  height: 80px;
-  margin-top: 10px;
+  height: 60px;
+  margin-top: 24px;
+}
+#topbar .logobox {
+  position: relative;
+}
+#topbardivider {
+  -webkit-transition: cubic-bezier(0.86, 0, 0.07, 1) 0.7s all;
+  -moz-transition: cubic-bezier(0.86, 0, 0.07, 1) 0.7s all;
+  -ms-transition: cubic-bezier(0.86, 0, 0.07, 1) 0.7s all;
+  transition: cubic-bezier(0.86, 0, 0.07, 1) 0.7s all;
+  position: relative;
+  z-index: 1000;
 }
 #introduction {
   text-align: center;
-  margin: 200px 0 100px 0;
+  background-color: #fff;
+  padding: 100px 0 0 0;
+  margin-top: -30px;
 }
 #introduction img {
-  width: 40%;
+  width: 30%;
   margin-bottom: 40px;
 }
 #introduction h1 {
   color: #f36d24;
   font-size: 2rem;
   font-weight: light;
-  opacity: 0;
   -webkit-transition: all 0.6s ease;
   -moz-transition: all 0.6s ease;
   -ms-transition: all 0.6s ease;
   transition: all 0.6s ease;
 }
+#introduction h1 span {
+  font-size: 1rem;
+  opacity: 0.5;
+}
 #introduction h5 {
   text-transform: uppercase;
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 900;
   margin-bottom: 40px;
   color: #303030;
 }
-#introduction h5 span {
-  color: #f36d24;
+#introduction .short {
+  width: 100px;
+  border-color: #f36d24;
+  margin: 10px auto 10px auto;
 }
-#about img {
-  width: 50%;
-  border-radius: 200px;
-  margin-bottom: 20px;
+#introduction .introPic {
+  padding-bottom: 80px;
 }
-#about div {
-  text-align: center;
+#introduction .fullWidth {
+  width: 100%;
+  padding: 50px 0 50px 0;
+  background-color: #303030;
+  color: #a9a9a9;
 }
-#about a {
-  font-size: 2rem;
+#introduction .fullWidth h1 {
+  text-transform: uppercase;
+  font-weight: 900;
+}
+#introduction .fullWidth p {
+  font-size: 1.2rem;
+}
+#introduction .fullWidth p.extramargin {
+  margin-top: 50px;
+}
+#introduction .wipArrow {
+  width: 120px;
+  height: 200px;
+  background-image: url("../images/arrow-down.svg");
+  background-size: 100% 100%;
+  position: absolute;
+  z-index: 101;
+  left: 50%;
+  margin-top: -15px;
+  margin-left: -60px;
+}
+#introduction .fireball {
+  background-color: #f36d24;
+  color: #fff;
+  width: 220px;
+  height: 220px;
+  border-radius: 300px;
+  margin: 0 auto 0 auto;
+  border: 10px solid #fff;
+}
+#introduction .fireball .car {
+  position: absolute;
+  width: 164px;
+  height: 126px;
+  -webkit-transform: translateX(-91px) translateY(80px);
+  -moz-transform: translateX(-91px) translateY(80px);
+  -ms-transform: translateX(-91px) translateY(80px);
+  transform: translateX(-91px) translateY(80px);
+}
+#introduction .fireball .flag {
+  position: absolute;
+  width: 94px;
+  height: 76px;
+  -webkit-transform: translateX(9px) translateY(8px);
+  -moz-transform: translateX(9px) translateY(8px);
+  -ms-transform: translateX(9px) translateY(8px);
+  transform: translateX(9px) translateY(8px);
+}
+#games {
+  text-align: left;
+  margin-top: -30px;
+  padding: 130px 0 130px 0;
+  color: #303030;
+  background-image: url("../images/racewarsbanner.png");
+  background-size: cover;
+  background-position: center;
+}
+#games .container {
+  padding: 20px;
+  background-color: #fff;
+  background-image: url("../images/chickenbg.png");
+  background-repeat: no-repeat;
+  background-position: 0% 120%;
+}
+#games h1 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+#games p {
+  font-size: 1.1rem;
+  color: #71776f;
+}
+#games img {
+  width: 100%;
+}
+#games a {
+  padding: 10px;
+  background-color: #f36d24;
+  color: #fff;
   text-decoration: none;
+  margin-right: 5px;
+  border-radius: 2px;
+  font-size: 1.1rem;
+  font-weight: 900;
+  box-shadow: 0px 3px 0px 0px #b95f2d;
+  position: relative;
+  top: -10px;
+}
+#footer {
+  text-align: left;
+  background-color: #000;
+  padding: 100px 0 200px 0;
+  margin-top: -30px;
+  position: relative;
+  font-size: 1.1rem;
+}
+#footer h1 {
   color: #f36d24;
-  margin-bottom: 50px;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+#footer .flamesDividerUp {
+  position: absolute;
+  top: 0;
+  margin-top: -30px;
+  background-image: url("../images/xflamesDark.png");
+}
+#footer a {
+  color: #f36d24;
+  text-decoration: none;
+}
+span {
+  color: #f36d24;
+}
+.flamesDividerUp {
+  width: 100%;
+  height: 30px;
+  display: block;
+  background-image: url("../images/xflamesflip.png");
+  background-size: 50% 110%;
+  position: relative;
+  z-index: 100;
+}
+.flamesDividerDown {
+  width: 100%;
+  height: 30px;
+  display: block;
+  background-image: url("../images/xflames.png");
+  background-size: 50% 110%;
+  position: relative;
+  z-index: 1000;
+}
+.centertext {
+  text-align: center;
 }
 /* #Media Queries
 ================================================== */
+@-moz-document url-prefix() {
+  #topbar {
+    background-color: #2c2c2c;
+  }
+}
 /* Smaller than standard 960 (devices and browsers) */
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
@@ -105,10 +330,54 @@ h5 {
   #introduction h5 {
     font-size: 2rem;
   }
+  #topbar {
+    height: 150px;
+  }
+  #topbar .logobox {
+    text-align: center;
+  }
+  #topbar .menubox {
+    text-align: center;
+  }
+  #topbar .menubox a {
+    float: right;
+    margin: 20px 55px 0 10px;
+  }
+  #games .container {
+    padding: 20px 20px 50px 20px;
+  }
+  #games a {
+    top: 20px;
+  }
+  #about #aboutcontent {
+    padding: 200px 0 100px 0;
+  }
 }
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
   #introduction h5 {
     font-size: 2rem;
+  }
+  #topbar {
+    height: 150px;
+  }
+  #topbar .logobox {
+    text-align: center;
+  }
+  #topbar .menubox {
+    text-align: center;
+  }
+  #topbar .menubox a {
+    float: right;
+    margin: 10px 20px 0 10px;
+  }
+  #games .container {
+    padding: 20px 20px 50px 20px;
+  }
+  #games a {
+    top: 20px;
+  }
+  #about #aboutcontent {
+    padding: 200px 0 100px 0;
   }
 }
