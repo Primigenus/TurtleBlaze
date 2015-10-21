@@ -55,9 +55,7 @@ $( document ).ready(function() {
   });
 
 
-  $( "body" ).click(function() {
-      setTimeout(function(){$("body").css('background-color', 'black');}, 50);
-  });
+
 
 
     // Initialize jRumble on Selector
